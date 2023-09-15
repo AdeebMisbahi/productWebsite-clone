@@ -1,0 +1,57 @@
+/* Apply a reset to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the main container */
+  .container-5 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  /* Style the subcontainers */
+  .subcontainer-5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow subcontainers to wrap to the next row on smaller screens */
+    margin-bottom: 20px; /* Add some space between subcontainers */
+  }
+  
+  /* Style the content within each subcontainer */
+  .subcontainer-content {
+    flex: 1; /* Allow content to take up equal space within the subcontainer */
+    padding: 20px;
+    background-color: #f9f9f9; /* Add a background color for better readability */
+  }
+  
+  /* Style the image within each subcontainer */
+  .subcontainer-img img {
+    max-width: 100%;
+    height: auto; /* Maintain image aspect ratio */
+  }
+  
+  /* Ensure text is centered vertically within each subcontainer */
+  .subcontainer-content h5,
+  .subcontainer-content h2,
+  .subcontainer-content p,
+  .subcontainer-content button {
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Add responsive styles */
+  @media screen and (max-width: 768px) {
+    /* Reduce the width of the content on smaller screens */
+    .subcontainer-content {
+      width: 100%;
+    }
+    
+    /* Center align the image on smaller screens */
+    .subcontainer-img {
+      text-align: center;
+    }
+  }
+  
